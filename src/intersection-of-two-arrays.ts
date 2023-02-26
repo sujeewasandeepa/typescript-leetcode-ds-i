@@ -10,21 +10,19 @@ export function intersect(nums1: number[], nums2: number[]): number[] {
 
     while (i < nums1Len && j < nums2Len) {
         if (nums1[i] > nums2[j]) {
-            if (nums1Len > nums2Len) {
-                i++
-            } else if (nums1Len < nums2Len) {
+            if (nums1Len < nums1Len){
                 j++
             } else {
                 i++
             }
+
         } else if (nums1[i] < nums2[j]) {
-            if (nums1Len > nums2Len) {
+            if (nums2Len < nums1Len) {
                 i++
-            } else if (nums1Len < nums2Len){
-                j++
             } else {
                 j++
             }
+
         } else {
             result.push(nums1[i])
             i++
