@@ -6,6 +6,8 @@ import { twoSum } from "./two-sum"
 import { MergeSortedArray } from "./merge-sorted-array"
 // Challenge No: 05 Intersection of Two Arrays II
 import { intersect } from "./intersection-of-two-arrays"
+// Challenge No: 06 Best Time to Buy and Sell Stock
+import { maxProfit } from "./best-time-to-buy-and-sell-stocks"
 
 console.log("---- Contains Duplicate [217] ----")
 
@@ -40,3 +42,10 @@ const Q4testCaseOne: [number[], number[]] = [[1,2,2,1], [2,2]]
 const Q4testCaseTwo: [number[], number[]] = [[4,9,5], [9,4,9,8,4]]
 
 console.log(intersect(Q4testCaseOne[0], Q4testCaseOne[1]))
+
+console.log("---- Best Time to Buy and Sell Stock ----")
+
+const Q5testCaseOne: number[] = [7,1,5,3,6,4]
+const Q5testCaseTwo: number[] = [7,6,4,3,1]
+
+console.log(maxProfit(Q5testCaseOne))
