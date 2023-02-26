@@ -39,4 +39,4 @@ console.log("---- Intersection of Two Arrays II ----")
 const Q4testCaseOne: [number[], number[]] = [[1,2,2,1], [2,2]]
 const Q4testCaseTwo: [number[], number[]] = [[4,9,5], [9,4,9,8,4]]
 
-console.log(intersect(Q4testCaseTwo[0], Q4testCaseTwo[1]))
+console.log(intersect(Q4testCaseOne[0], Q4testCaseOne[1]))

@@ -1,32 +1,31 @@
 export function intersect(nums1: number[], nums2: number[]): number[] {
     let result: number[] = []
-    nums1 = nums1.sort()
-    nums2 = nums2.sort()
-    console.log(nums1)
-    console.log(nums2)
-    let nums1Len = nums1.length
-    let nums2Len = nums2.length
-    let i = 0, j = 0;
 
-    while (i < nums1Len && j < nums2Len) {
-        if (nums1[i] > nums2[j]) {
-            if (nums1Len < nums1Len){
-                j++
-            } else {
-                i++
-            }
+    let nums1Map: Map<number, any> = new Map()
+    let nums2Map: Map<number, any> = new Map()
 
-        } else if (nums1[i] < nums2[j]) {
-            if (nums2Len < nums1Len) {
-                i++
-            } else {
-                j++
-            }
-
+    for (let i=0; i<nums1.length; i++) {
+        if (nums1Map.has(nums1[i])) {
+            nums1Map.set(nums1[i], nums1Map.get(nums1[i]) + 1)
         } else {
-            result.push(nums1[i])
-            i++
-            j++
+            nums1Map.set(nums1[i], 1)
+        }
+    }
+
+    for (let i=0; i<nums2.length; i++) {
+        if (nums2Map.has(nums2[i])) {
+            nums2Map.set(nums2[i], nums2Map.get(nums2[i]) + 1)
+        } else {
+            nums2Map.set(nums2[i], 1)
+        }
+    }
+
+    for (let [key, value] of nums1Map) {
+        if (nums2Map.has(key)) {
+            let min = Math.min(value, nums2Map.get(key))
+            for (let i=0; i<min; i++) {
+                result.push(key)
+            }
         }
     }
 
