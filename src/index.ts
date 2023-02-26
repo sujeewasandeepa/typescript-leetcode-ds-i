@@ -4,6 +4,8 @@ import { containsDuplicate } from "./contains-duplicate"
 import { twoSum } from "./two-sum"
 // Challenge No: 04 Merge Sorted Array [88]
 import { MergeSortedArray } from "./merge-sorted-array"
+// Challenge No: 05 Intersection of Two Arrays II
+import { intersect } from "./intersection-of-two-arrays"
 
 console.log("---- Contains Duplicate [217] ----")
 
@@ -31,3 +33,10 @@ const Q3testCaseThree: [number[], number, number[], number] = [[0], 0, [1], 1]
 const Q3testCaseFour: [number[], number, number[], number] = [[-1,0,0,3,3,3,0,0,0], 6, [1,2,2], 3]
 
 MergeSortedArray(Q3testCaseThree[0], Q3testCaseThree[1], Q3testCaseThree[2], Q3testCaseThree[3])
+
+console.log("---- Intersection of Two Arrays II ----")
+
+const Q4testCaseOne: [number[], number[]] = [[1,2,2,1], [2,2]]
+const Q4testCaseTwo: [number[], number[]] = [[4,9,5], [9,4,9,8,4]]
+
+console.log(intersect(Q4testCaseTwo[0], Q4testCaseTwo[1]))
