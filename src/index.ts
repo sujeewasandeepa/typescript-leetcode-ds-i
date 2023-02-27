@@ -10,6 +10,8 @@ import { intersect } from "./intersection-of-two-arrays"
 import { maxProfit } from "./best-time-to-buy-and-sell-stocks"
 // Challenge No. 07 Reshape the Matrix
 import { matrixReshape } from "./reshape-the-matrix"
+// Challenge No. 08 Pascal's Triangle
+import { generatePascalTriangle } from "./pascals-triangle"
 
 console.log("---- Contains Duplicate [217] ----")
 
@@ -58,3 +60,12 @@ const Q6testCaseOne: [number[][], number, number] = [[[1,2], [3,4]], 1, 4]
 const Q6testCaseTwo: [number[][], number, number] = [[[1,2], [3,4]], 2, 4]
 
 console.log(matrixReshape(Q6testCaseOne[0], Q6testCaseOne[1], Q6testCaseOne[2]))
+
+console.log("---- Pascal's Triangle ----")
+
+const Q7testCaseOne: number = 5
+const Q7testCaseTwo: number = 1
+const Q7testCaseThree: number = 0
+const Q7testCaseFour: number = 2
+
+console.log(generatePascalTriangle(Q7testCaseOne))
