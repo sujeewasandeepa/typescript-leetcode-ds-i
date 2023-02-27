@@ -8,6 +8,8 @@ import { MergeSortedArray } from "./merge-sorted-array"
 import { intersect } from "./intersection-of-two-arrays"
 // Challenge No: 06 Best Time to Buy and Sell Stock
 import { maxProfit } from "./best-time-to-buy-and-sell-stocks"
+// Challenge No. 07 Reshape the Matrix
+import { matrixReshape } from "./reshape-the-matrix"
 
 console.log("---- Contains Duplicate [217] ----")
 
@@ -48,4 +50,11 @@ console.log("---- Best Time to Buy and Sell Stock ----")
 const Q5testCaseOne: number[] = [7,1,5,3,6,4]
 const Q5testCaseTwo: number[] = [7,6,4,3,1]
 
-console.log(maxProfit(Q5testCaseOne))
+console.log(maxProfit(Q5testCaseTwo))
+
+console.log("---- Reshape the Matrix ----")
+
+const Q6testCaseOne: [number[][], number, number] = [[[1,2], [3,4]], 1, 4]
+const Q6testCaseTwo: [number[][], number, number] = [[[1,2], [3,4]], 2, 4]
+
+console.log(matrixReshape(Q6testCaseOne[0], Q6testCaseOne[1], Q6testCaseOne[2]))
