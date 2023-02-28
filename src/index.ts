@@ -12,6 +12,8 @@ import { maxProfit } from "./best-time-to-buy-and-sell-stocks"
 import { matrixReshape } from "./reshape-the-matrix"
 // Challenge No. 08 Pascal's Triangle
 import { generatePascalTriangle } from "./pascals-triangle"
+// Challenge No.09 Valid Sudoku [36]
+import { isValidSudoku } from "./valid-sudoku"
 
 console.log("---- Contains Duplicate [217] ----")
 
@@ -68,4 +70,29 @@ const Q7testCaseTwo: number = 1
 const Q7testCaseThree: number = 0
 const Q7testCaseFour: number = 2
 
-console.log(generatePascalTriangle(Q7testCaseOne))
+console.log(generatePascalTriangle(Q7testCaseTwo))
+
+console.log("---- Valid Sudoku ----")
+
+const Q8testCaseOne: string[][] = [
+ ["5","3",".",".","7",".",".",".","."]
+,["6",".",".","1","9","5",".",".","."]
+,[".","9","8",".",".",".",".","6","."]
+,["8",".",".",".","6",".",".",".","3"]
+,["4",".",".","8",".","3",".",".","1"]
+,["7",".",".",".","2",".",".",".","6"]
+,[".","6",".",".",".",".","2","8","."]
+,[".",".",".","4","1","9",".",".","5"]
+,[".",".",".",".","8",".",".","7","9"]]
+
+const Q8testCaseTwo: string[][] = [["8","3",".",".","7",".",".",".","."]
+,["6",".",".","1","9","5",".",".","."]
+,[".","9","8",".",".",".",".","6","."]
+,["8",".",".",".","6",".",".",".","3"]
+,["4",".",".","8",".","3",".",".","1"]
+,["7",".",".",".","2",".",".",".","6"]
+,[".","6",".",".",".",".","2","8","."]
+,[".",".",".","4","1","9",".",".","5"]
+,[".",".",".",".","8",".",".","7","9"]]
+
+console.log(isValidSudoku(Q8testCaseTwo))
