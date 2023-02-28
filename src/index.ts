@@ -14,6 +14,8 @@ import { matrixReshape } from "./reshape-the-matrix"
 import { generatePascalTriangle } from "./pascals-triangle"
 // Challenge No.09 Valid Sudoku [36]
 import { isValidSudoku } from "./valid-sudoku"
+// Challenge No.10 Search 2D matrix [74]
+import { searchMatrix } from "./search-a-two-d-matrix"
 
 console.log("---- Contains Duplicate [217] ----")
 
@@ -96,3 +98,10 @@ const Q8testCaseTwo: string[][] = [["8","3",".",".","7",".",".",".","."]
 ,[".",".",".",".","8",".",".","7","9"]]
 
 console.log(isValidSudoku(Q8testCaseTwo))
+
+console.log("---- Search 2D matrix ----")
+
+const Q9testCaseOne: [number[][], number] = [[[1,3,5,7],[10,11,16,20],[23,30,34,60]], 3]
+const Q9testCaseTwo: [number[][], number] = [[[1,3,5,7],[10,11,16,20],[23,30,34,60]], 13]
+
+console.log(searchMatrix(Q9testCaseOne[0], Q9testCaseOne[1]))
