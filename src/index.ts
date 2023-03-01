@@ -16,6 +16,8 @@ import { generatePascalTriangle } from "./pascals-triangle"
 import { isValidSudoku } from "./valid-sudoku"
 // Challenge No.10 Search 2D matrix [74]
 import { searchMatrix } from "./search-a-two-d-matrix"
+// Challenge No.11 First Unique Character in a String [387]
+import { firstUniqChar } from "./first-unique-character-in-a-string"
 
 console.log("---- Contains Duplicate [217] ----")
 
@@ -105,3 +107,11 @@ const Q9testCaseOne: [number[][], number] = [[[1,3,5,7],[10,11,16,20],[23,30,34,
 const Q9testCaseTwo: [number[][], number] = [[[1,3,5,7],[10,11,16,20],[23,30,34,60]], 13]
 
 console.log(searchMatrix(Q9testCaseOne[0], Q9testCaseOne[1]))
+
+console.log("---- First Unique Character in a String ----")
+
+const Q10testCaseOne: string = "leetcode"
+const Q10testCaseTwo: string = "loveleetcode"
+const Q10testCaseThree: string = "aabb"
+
+console.log(firstUniqChar(Q10testCaseOne))
