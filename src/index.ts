@@ -20,6 +20,8 @@ import { searchMatrix } from "./search-a-two-d-matrix"
 import { firstUniqChar } from "./first-unique-character-in-a-string"
 // Challenge No.12 Ransom Note [383]
 import { canConstruct } from "./ransom-note"
+// Challenge No.13 Valid Anagram [242]
+import { isAnagram } from "./valid-anagram"
 
 console.log("---- Contains Duplicate [217] ----")
 
@@ -125,3 +127,10 @@ const Q11testCaseTwo: [string, string] = ["aa", "ab"]
 const Q11testCaseThree: [string, string] = ["aa", "aab"]
 
 console.log(canConstruct(Q11testCaseOne[0], Q11testCaseOne[1]))
+
+console.log("---- Valid Anagram ----")
+
+const Q12testCaseOne: [string, string] = ["anagram", "nagaram"]
+const Q12testCaseTwo: [string, string] = ["rat", "car"]
+
+console.log(isAnagram(Q12testCaseTwo[0], Q12testCaseTwo[1]))
