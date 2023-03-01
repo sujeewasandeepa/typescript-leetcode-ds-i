@@ -18,6 +18,8 @@ import { isValidSudoku } from "./valid-sudoku"
 import { searchMatrix } from "./search-a-two-d-matrix"
 // Challenge No.11 First Unique Character in a String [387]
 import { firstUniqChar } from "./first-unique-character-in-a-string"
+// Challenge No.12 Ransom Note [383]
+import { canConstruct } from "./ransom-note"
 
 console.log("---- Contains Duplicate [217] ----")
 
@@ -115,3 +117,11 @@ const Q10testCaseTwo: string = "loveleetcode"
 const Q10testCaseThree: string = "aabb"
 
 console.log(firstUniqChar(Q10testCaseOne))
+
+console.log("---- Ransom Note ----")
+
+const Q11testCaseOne: [string, string] = ["a", "b"]
+const Q11testCaseTwo: [string, string] = ["aa", "ab"]
+const Q11testCaseThree: [string, string] = ["aa", "aab"]
+
+console.log(canConstruct(Q11testCaseOne[0], Q11testCaseOne[1]))
