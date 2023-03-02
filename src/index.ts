@@ -24,6 +24,8 @@ import { canConstruct } from "./ransom-note"
 import { isAnagram } from "./valid-anagram"
 // Challenge No.14 Linked List Cycle [141]
 import { hasCycle } from "./linked-list-cycle"
+// Challenge No.15 Merge Sorted Lists
+import { mergeTwoLists } from "./merge-two-sorted-lists"
 
 console.log("---- Contains Duplicate [217] ----")
 
@@ -142,3 +144,9 @@ console.log("---- Linked List Cycle ----")
 const Q13testCaseOne: [number[], number] = [[3,2,0,-4], 1]
 const Q13testCaseTwo: [number[], number] = [[1,2], 0]
 const Q13testCaseThree: [number[], number] = [[1], -1]
+
+
+console.log("---- Merge Two Sorted Lists ----")
+
+console.log("hard to test here")
+
