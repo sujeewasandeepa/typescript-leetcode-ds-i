@@ -22,6 +22,8 @@ import { firstUniqChar } from "./first-unique-character-in-a-string"
 import { canConstruct } from "./ransom-note"
 // Challenge No.13 Valid Anagram [242]
 import { isAnagram } from "./valid-anagram"
+// Challenge No.14 Linked List Cycle [141]
+import { hasCycle } from "./linked-list-cycle"
 
 console.log("---- Contains Duplicate [217] ----")
 
@@ -134,3 +136,9 @@ const Q12testCaseOne: [string, string] = ["anagram", "nagaram"]
 const Q12testCaseTwo: [string, string] = ["rat", "car"]
 
 console.log(isAnagram(Q12testCaseTwo[0], Q12testCaseTwo[1]))
+
+console.log("---- Linked List Cycle ----")
+
+const Q13testCaseOne: [number[], number] = [[3,2,0,-4], 1]
+const Q13testCaseTwo: [number[], number] = [[1,2], 0]
+const Q13testCaseThree: [number[], number] = [[1], -1]
