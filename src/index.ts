@@ -26,6 +26,10 @@ import { isAnagram } from "./valid-anagram"
 import { hasCycle } from "./linked-list-cycle"
 // Challenge No.15 Merge Sorted Lists
 import { mergeTwoLists } from "./merge-two-sorted-lists"
+// Challenge No.16 Reverse Linked List
+import { reverseList } from "./reverse-linked-list"
+// Challenge No.17 Remove Duplicates from Sorted list
+import { deleteDuplicates } from "./remove-duplicates-from-sorted-list"
 
 console.log("---- Contains Duplicate [217] ----")
 
@@ -149,4 +153,13 @@ const Q13testCaseThree: [number[], number] = [[1], -1]
 console.log("---- Merge Two Sorted Lists ----")
 
 console.log("hard to test here")
+
+console.log("---- Reverse linked list ----")
+
+const Q15testCaseOne: number[] = [1,2,3,4,5]
+const Q15testCaseTwo: number[] = [1,2]
+
+console.log('hard to test here')
+
+
 
