@@ -30,6 +30,10 @@ import { mergeTwoLists } from "./merge-two-sorted-lists"
 import { reverseList } from "./reverse-linked-list"
 // Challenge No.17 Remove Duplicates from Sorted list
 import { deleteDuplicates } from "./remove-duplicates-from-sorted-list"
+// Challenge No.18 Valid Parenthesis [20]
+import { isValid } from "./valid-parenthesis"
+// Challenge No.19 Implement Queue using Stacks [232]
+import { MyQueue } from "./implement-queue-using-stacks"
 
 console.log("---- Contains Duplicate [217] ----")
 
@@ -161,5 +165,18 @@ const Q15testCaseTwo: number[] = [1,2]
 
 console.log('hard to test here')
 
+console.log("---- Valid Parentheses ----")
+const Q18testCaseOne: string = "()"
+const Q18testCaseTwo: string = "()[]{}"
+const Q18testCaseThree: string = "(]"
+
+console.log(isValid(Q18testCaseThree))
+
+console.log("---- Implement queue with stacks ----")
+// console.log(MyQueue.push(1))
+// console.log(MyQueue.push(2))
+// console.log(MyQueue.peek())
+// console.log(MyQueue.pop())
+// console.log(MyQueue.empty())
 
 
